@@ -38,6 +38,7 @@ header{
 
 menu{
     grid-area: menu;
+    max-width: 110px;
 }
 
 /* main */
@@ -68,8 +69,11 @@ menu{
     justify-content: center;
     align-items: center;
     background-color: darkblue;
-    height: 2.5rem;
-    
+    height: 2.5rem;   
+}
+
+.comprar:hover{
+    cursor: pointer;
 }
 
 .comprar p{
@@ -78,6 +82,7 @@ menu{
 
 main{
     grid-area: main;
+    padding: 20px;
     
     
 }
@@ -85,9 +90,10 @@ main{
 .maingrid{
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 10px;
+    gap: 20px;
 }
 
+/* footer */
 footer{
     background-color: darkblue;
     color: white;
@@ -99,11 +105,13 @@ footer{
     grid-area: footer;
 }
 
+
+/* grid */
 .grid-container{
     display: grid;
     grid-template-areas: 
-    "header header header"
-    "menu main main"
-    "menu main main"
-    "footer footer footer";
+    "header header header header"
+    "menu main main main"
+    "menu main main main"
+    "footer footer footer footer";
 }
