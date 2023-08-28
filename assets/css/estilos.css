@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+
+body{
+    background-color: azure;
+    font-family: 'Roboto', sans-serif;
+} 
+/* header */
+header{
+    background-color: darkblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 900;
+    grid-area: header;
+    
+}
+/* menu */
+.titulo{
+    color: gray;
+}
+
+.cantidad{
+    color: darkgray;
+}
+
+.opciones{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.opciones :hover{
+    cursor: pointer;  
+}
+
+menu{
+    grid-area: menu;
+}
+
+/* main */
+
+.productos{
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+.productos img{
+    width: auto;
+    height: 250px;
+    padding-top: 30px;
+    
+}
+.precio{
+    color: gray;
+}
+
+.comprar{
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkblue;
+    height: 2.5rem;
+    
+}
+
+.comprar p{
+    font-size: 0.5rem;
+}
+
+main{
+    grid-area: main;
+    
+    
+}
+
+.maingrid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+
+footer{
+    background-color: darkblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.0rem;
+    font-weight: 100;
+    grid-area: footer;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "menu main main"
+    "menu main main"
+    "footer footer footer";
+}
