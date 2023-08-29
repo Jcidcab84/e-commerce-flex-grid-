@@ -49,13 +49,14 @@ menu{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 30px;
     
    
 }
 .productos img{
     width: auto;
-    height: 250px;
-    padding-top: 30px;
+    height: 300px;
+    padding: 30px;
     
 }
 .precio{
